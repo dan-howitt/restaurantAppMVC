@@ -37,7 +37,7 @@ namespace RestaurantApp
            
         }
 
-
+        //gets the next acct_ID from the SQL database
         private int GetNewUserID()
         {
             SqlCommand sqlCmd = new SqlCommand();
@@ -70,6 +70,7 @@ namespace RestaurantApp
 
         }
 
+        //following methods return individual member values (getters)
         public int GetUserID()
         {
             return this.userID;
